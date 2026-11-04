@@ -661,6 +661,35 @@ button {
     line-height: 2;
 }
 
+.about-languages {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px 14px;
+    margin-bottom: 8px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.about-languages-label {
+    color: var(--white);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.about-languages ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+}
+
+.about-languages li + li::before {
+    content: "•";
+    margin-right: 12px;
+    color: var(--muted-dark);
+}
+
 .underlined-link {
     display: inline-block;
     margin-top: 15px;
